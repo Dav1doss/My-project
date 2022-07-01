@@ -712,11 +712,11 @@
     bottom: 0;
     background-color: #2F2C45;
     padding: 15px;
-    padding-top: 42px;
     width: 100%;
     height: 65%;
     opacity: 0;
     z-index: 20;
+    display: none;
     transform: translateX(-100%);
     transition: transform .3s ease-in-out, opacity .3s ease-in-out, visibility .3s ease-in-out;
     visibility: hidden;
@@ -725,10 +725,11 @@
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+    display: block;
   }
   .header__list {
     display: block;
-
+    padding-top: 42px;
   }
   .header__item:not(:last-child) {
     margin-right: 0;
